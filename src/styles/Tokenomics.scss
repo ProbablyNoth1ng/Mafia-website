@@ -1,0 +1,85 @@
+.tokenomics{
+    background-image: url('../assets/tokenomicsBG.jpeg');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .tokenomics__image_container{
+        display: flex;
+        .tokenomics__image{
+            height: 100vh;
+        }
+    }
+    .tokenomics__text_container_wrapper{
+        align-items: center;
+    display: flex;
+    flex-direction: column;
+        
+    }
+    .tokenomics__text_container{
+        align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+        .tokenomics__text{
+            position: relative;
+            top: 50%;
+            padding-left: 250px;
+        }
+        .tokenomics__blocks{
+            display: grid;
+            justify-content: center;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            position: relative;
+            top: 50%;
+            
+            transform: translate(0,-50%);
+            .tokenomics__block{
+                width: 350px;
+                padding: 20px 10px;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                transition: transform 0.5s ease;
+                
+            }
+            .tokenomics__block:hover{
+                transform: scale(1.1);
+            }
+            .tokenomics__block:nth-child(1){
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row: 1;
+
+            }
+            .tokenomics__block:nth-child(2){
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row: 1;
+
+            }
+            .tokenomics__block:nth-child(3){
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row: 2;
+              
+
+            }
+            .tokenomics__block:nth-child(4){
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row: 2;
+
+            }
+            h2{
+                padding-bottom: 10px;
+            }
+            .tokenomics__block > *{
+                text-align: center;
+            }
+        }
+    }
+}

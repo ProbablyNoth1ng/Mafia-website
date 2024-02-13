@@ -1,0 +1,18 @@
+@import "mixin";
+.react-fullpage__contents{
+    height: 100%;
+}
+.header{
+    
+    .header__video{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+#integrated-terminal{
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%,-95%);
+}
