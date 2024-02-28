@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "mixin";
 @import url(https://fonts.googleapis.com/css?family=Bangers:regular);
 *{
   box-sizing: border-box;
@@ -49,7 +50,13 @@ body{ -ms-overflow-style: none; }
   font-weight: 700;
   font-size: 30px;
   letter-spacing: 2px;
-  text-shadow: -3px 3px 5px rgba(0, 0, 0, 1);
+  @include media("max","xl"){
+
+        font-size: 20px;
+        letter-spacing: unset;
+        text-transform: unset;
+    
+}
 }
 .sTitle{
   font-weight: 600;
@@ -57,14 +64,27 @@ body{ -ms-overflow-style: none; }
   font-size: 23px;
   color: white;
   letter-spacing: 3px;
-  text-shadow: -3px 3px 5px rgba(0, 0, 0, 1);
+  @include media("max","xl"){
+  
+        font-size: 15px;
+        letter-spacing: unset;
+        text-transform: unset;
+    
+}
 }
 .plain_text{
   font-family: "Bangers";
   font-size: 20px;
   color: white !important;
   letter-spacing: 1px;
-  text-shadow: -3px 3px 5px rgba(0, 0, 0, 1);
+  @include media("max","xl"){
+
+        font-size: 13px;
+        letter-spacing: unset;
+        text-transform: unset;
+    
+}
+
 }
 
 

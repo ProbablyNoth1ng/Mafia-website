@@ -4,9 +4,6 @@ import '../styles/Nav.scss';
 import music from '../assets/midnight-forest-184304.mp3';
 
 
-
-
-
 export default function Nav({ sendDataToParent }) {
   const [clicked, setClicked] = useState(false);
   const [playing,setPlaying] = useState(false)
@@ -53,11 +50,12 @@ export default function Nav({ sendDataToParent }) {
   return (
     <div className={`bg ${clicked ? 'opened' : ''}`} >
       <nav className="nav">
-        <a href="#home" className="logo link ">MAFIA</a>
+        <a href='#' className="logo link " onClick={() => sendDataToParent(0)}>MAFIA</a>
         <div className="nav__links">
           <a href="#" className={`nav__link link  ${clicked ? 'visible' : ''}`} id="home_link" onClick={navClick}>Home</a>
           <a href="#" className={`nav__link link  ${clicked ? 'visible' : ''}`} id="about_link" onClick={navClick}>About</a>
           <a href="https://www.bozo.finance/bridge/MAFIA" className={`nav__link link ${clicked ? 'visible' : ''}`} onClick={navClick}>Bridge</a>
+          <a href="https://www.tensor.trade/trade/mafia_spl22" className={`nav__link link ${clicked ? 'visible' : ''}`} onClick={navClick}>Trade now</a>
           <a href="#" className={`nav__link link  ${clicked ? 'visible' : ''}`} id="tokenomics_link" onClick={navClick}>Tokenomics</a>
           <a href="#" className={`nav__link link  ${clicked ? 'visible' : ''}`} id="footer_link" onClick={navClick}>Links</a>
         </div>

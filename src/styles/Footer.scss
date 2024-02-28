@@ -20,8 +20,17 @@
     padding: 30px 0;
     background: rgba(0,0,0,0.8);
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
+    @include media("max","xl"){
+        padding: 30px 0;
+    }
     .footer__column{
+        margin: 0 200px;
+        width: 250px;
+        @include media("max","xl"){
+            margin: 0 100px;
+            width: 150px;
+        }
         h2{
             display: flex;
             justify-content: center;
@@ -31,11 +40,38 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        .link{
+            font-size: 20px;    
+            @include media("min","xl"){
+                font-size: 17px;
+            }
+        }
+
+        @include media("min","xl"){
+            .plain_text{
+                font-size: 12px;
+            }
+          
+        }
     }
     .footer__column_inner > *{
         padding: 5px 0;
+       
     }
-   
+    .frs {
+        font-size: 19px;
+
+        @include media("min","xl"){
+            font-size: 14px;
+        }
+        @include media("max","xl"){
+            font-size: 12px;
+        }
+    }
+    .ca{
+        font-size: 10px;
+    }
 }
 .footer > * {
     margin: 0 20px;

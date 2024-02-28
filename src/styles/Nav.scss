@@ -7,9 +7,16 @@
     height: auto;
     top: 0;
     align-items: center;
-
+    font-size: 25px;
+    @include media("max","xl"){
+        padding: 5px 20px !important;
+        font-size: unset;
+    }
     .logo{
-        font-size: 25px;
+        font-size: 45px;
+        @include media("max","xl"){
+            font-size: 30px;
+        }
     }
     justify-content: space-between;
     padding: 20px ;
@@ -18,7 +25,10 @@
         .nav__link{
             margin: 0 15px;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 30px;
+            @include media("max","xl"){
+                font-size: 20px;
+            }
         }
     }
     .sound{

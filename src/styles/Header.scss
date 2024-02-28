@@ -9,10 +9,21 @@
         height: 100vh;
     }
 }
-#integrated-terminal{
-    width: 600px;
+.swap__container{
+   
+    width: 550px;
+    padding: 10px;
+    background-color: rgba(77, 77, 77, 0.7);
+    border-radius: 20px; 
+    backdrop-filter: blur(20px); 
     position: absolute;
     left: 50%;
     top: 95%;
     transform: translate(-50%,-95%);
+    @include media("max",'xl'){
+      
+    }
+}
+#integrated-terminal{
+    width: 100%;
 }

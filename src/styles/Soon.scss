@@ -10,26 +10,26 @@
         transform: translate(-50%,-50%);
         z-index: 2;
 
-        animation: shake 10s linear 2s infinite;
-        @keyframes shake {
-            0%{
-                transform: translate(-50%,-50%);
-            }
-            50%{
-                transform: translate(-50%,-55%);
-            }
-            100%{
-                transform: translate(-50%,-50%);
-            }
-        }
+        // animation: shake 10s linear 2s infinite;
+        // @keyframes shake {
+        //     0%{
+        //         transform: translate(-50%,-50%);
+        //     }
+        //     50%{
+        //         transform: translate(-50%,-60%);
+        //     }
+        //     100%{
+        //         transform: translate(-50%,-50%);
+        //     }
+        // }
     }
     .soon__text{
         font-family: "Bangers";
         z-index: 3;
         position: absolute;
-        left: 55%;
+        left: 52%;
         top: 45%;
-        transform: translate(-55%,-45%);
+        transform: translate(-52%,-45%);
         color: black !important;
         font-size: 170px;
     }

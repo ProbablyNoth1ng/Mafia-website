@@ -5,45 +5,101 @@
     background-size: cover;
 }
 .about{
-    
+    padding: 0px 0px 0 0;
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
+
     width: 100%;
+    @include media("max","xl"){
+        padding: 0px 50px 0 50px;
+    }
+    @media(min-width:1200px){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 0px 50px;
+    }
+    @media(max-width:820px){
+        padding: 0 30px;
+    }
     .pre_title__container{
         display: flex;
         justify-content: center;
-        padding: 0 0 10px 0;
+        padding: 10px 0 30px 0;
+        @include media("max","xl"){
+            padding: 10px 0 20px 0;
+        }
         .about__pre_title{
-            padding: 2px 10px;
+            
+            font-size: 30px;
+            padding: 8px 30px;
             border-radius: 10px;
-            background-color: sandybrown;
+            background-color:rgb(166, 102, 68);
+            
+            letter-spacing: 3px;
+            @include media("max","xl"){
+                font-size: 23px;
+                padding: 4px 15px;
+            }
+            @media(min-width:1200px){
+                margin: 20px 0;
+            }
         }
     }
     .about__title {
-        max-width: 800px;
+        
+        max-width: 1000px;
         margin: 0 auto;
         text-align: center;
         display: flex;
+        letter-spacing: 4px;
+        font-size: 45px;
         justify-content: center;
-        padding-bottom: 30px;
+        padding-bottom: 35px;
+        @include media("max","xl"){
+            max-width: 900px;
+            letter-spacing: 2px;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+
+    }
     }
     .cards{
         display: flex;
         justify-content: center;
-        padding: 20px 0 0 0;
+        padding: 10px 0 0 0;
+        @include media("max","xl"){
+          flex-wrap: wrap;
+        }
         .card{
             background-color: transparent;
             border: none;
             margin: 0 30px;
-            padding: 20px 10px;
+            padding: 30px 40px;
             background-color: rgba($color: black, $alpha: 0.5);
             border-radius: 15px;
             transition: transform 0.5s ease;
-            
+            @include media("max","xl"){
+                padding: 30px 50px;
+                margin: 20px 20px;
+            }
+            @media(max-width:820px){
+                padding: 20px 20px;
+                margin: 20px 10px;
+            }
             .plain_text{
                 max-width: 250px;
+                @include media("max","xl"){
+                    max-width: 220px;
+                    font-size: 20px;
+                }
             }
+
+
         }
         .card:hover{
             transform: scale(1.1); 
@@ -54,36 +110,55 @@
             text-align: center;
         }
         .icon_wrapper{
+            margin-bottom: 15px;
             align-items: center;
             margin: 0 auto;
-            width: 60px;
-            height: 60px;
+            width: 110px;
+            height: 110px;
             border-radius: 10px;
             background-color: bisque;
             display: flex;
             justify-content: center;
-
+            @include media("max","xl"){
+                margin-bottom: 0px;
+                width: 60px;
+                height: 60px;
+            }
             .icon{
-                font-size:30px;
+                color: #7A005C;
+                font-size: 80px;
                 display: flex;
                 align-items: center;
+                @include media("max","xl"){
+                    font-size: 40px;
+                }
             }
         }
     }
-    .sTitle{
-        padding: 10px 0;
+    .card__title {
+        font-size: 30px;
+        padding: 30px 0 25px 0;
+        @include media("max","xl"){
+                font-size: 23px;
+                padding: 10px 0 5px 0;
+
+        }
+    }
+
+.iconn{
+    width: 100px;
+    height: 100px;
+    @include media("max","xl"){
+                width: 50px;
+                height: 50px;
     }
 }
-.iconnn{
-    color: #7A005C;
-   
-}
-.pump{
-    width: 50px;
-}
-.spiral{
-    width: 50px;
-}
-.token{
-    width: 50px;
-}
+// .pump{
+//     width: 50px;
+// }
+// .spiral{
+//     width: 50px;
+// }
+// .token{
+//     width: 50px;
+// }
