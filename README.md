@@ -1,8 +1,59 @@
-# React + Vite
+# Mafia Landing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React project bootstrapped with Vite. 
+Project from freelance. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14.x or later)
+- npm (comes with Node.js) or yarn (alternative package manager)
+
+## Getting Started
+
+### 1. Clone the repository
+
+To clone the repository, run the following command:
+
+```bash
+git clone https://github.com/ProbablyNoth1ng/Mafia-website.git
+```
+
+### 2. Navigate to the project directory
+```bash
+cd Mafia-website
+```
+### 3. Install dependencies
+You can install the project dependencies using either npm or yarn.
+
+```bash
+npm install
+```
+or
+```bash
+yarn install
+```
+### 4. Run the development server
+Once the dependencies are installed, you can start the development server.
+
+```bash
+npm run dev
+```
+or
+```bash
+yarn dev
+```
+
+### 5. Building the project
+To create an optimized production build of the project:
+
+```bash
+npm run build
+```
+or
+```bash
+yarn build
+```
